@@ -50,7 +50,6 @@ tags$br()
 ```{r}
 #| context: server
 # Read once at startup, not on every input change
-BondsDF_long <- data.table::fread("Data/BondsDF_long.csv")
 
 myPrize <- reactive({
   req(input$bondID)  # wait until there's actually input
