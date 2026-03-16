@@ -12,7 +12,8 @@ server: shiny
 library(ggplot2)
 library(gt)
 library(bslib)
-BondsDF_long <- data.table::fread("Data/BondsDF_long.csv")
+library(data.table)
+BondsDF_long <- fread("Data/BondsDF_long.csv")
 ```
 
 #  {.sidebar}
