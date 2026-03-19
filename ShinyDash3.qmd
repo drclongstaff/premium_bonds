@@ -54,7 +54,7 @@ tags$br()
 
 [Contact me](mailto:%20drclongstaff@gmail.com, "drclongstaff@gmail.com") for issues or comments about the dashboard. Or tell me if you have reclaimed a prize!
 
-# Premium bond monthly prize draws began in 1956 and there are many unclaimed prizes. The top prize is £1 million
+# Premium bond monthly prize draws began in 1956 and there is >£100 million of unclaimed prizes
 
 ```{r}
 #| context: server
@@ -92,18 +92,18 @@ output$bond <- renderText({
 
 ```{r}
 #| content: valuebox
-#| title: "I found two old premium bonds in a drawer"
+#| title: "I found two old premium bonds from 1959"
 #| color: pink
 #| icon: currency-pound
-p("they were bought for me when I was born in 1959")
+p("Are unclaimed prizes attached to these bonds?")
 ```
 
 ```{r}
 #| content: valuebox
-#| title: "The NS&I data is difficult to search"
+#| title: "Search here for unclaimed prizes"
 #| color: blue
 #| icon: unlock-fill
-p("so this dashboard will help find unclaimed prizes")
+p("simply enter premium bond numbers top-left")
 ```
 
 ## Row {height="86%"}
