@@ -3,7 +3,15 @@ title: "Premimum Bond Prize Finder"
 format: 
   dashboard:
     theme: materia
-    nav-buttons: [linkedin, twitter, github]
+    nav-buttons:
+      - icon: github
+        href: https://github.com/drclongstaff/premium_bonds
+      - icon: bluesky
+        href: http://bsky.app/profile/drclongstaff.bsky.social
+      - icon: globe2
+        href: https://drclongstaff.github.io/shiny-clots
+      - text: Contact
+        href: mailto:drclongstaff@gmail.com
 server: shiny
 ---
 
@@ -147,9 +155,9 @@ p <- ggplot(SumDF, aes(Prize, Number)) +
        )+
   theme_minimal()
 
-axisText <- element_text(face = "bold", color = "grey20", size = 14)
+axisText <- element_text(face = "bold", color = "grey25", size = 14)
 titleText <- element_text(face = "bold", color = "grey10", size = 20, hjust = 0.5)
-subtitleText <- element_text(face = "bold", color = "grey20", size = 16, hjust = 0.5)
+subtitleText <- element_text(face = "bold", color = "grey35", size = 14, hjust = 0.5)
 p+theme(axis.title = axisText, axis.text = axisText,
         plot.title = titleText,
         plot.subtitle = subtitleText)
