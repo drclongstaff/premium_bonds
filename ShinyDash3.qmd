@@ -2,6 +2,7 @@
 title: "Premimum Bond Prize Finder"
 format: 
   dashboard:
+    scrolling: false
     theme: materia
     nav-buttons:
       - icon: github
@@ -54,7 +55,7 @@ tags$br()
 
 [Contact me](mailto:%20drclongstaff@gmail.com, "drclongstaff@gmail.com") for issues or comments about the dashboard. Or tell me if you have reclaimed a prize!
 
-# Premium bond monthly prize draws began in 1956 and there is >£100 million of unclaimed prizes
+# Premium bond monthly prize draws began in 1956 and there are millions of unclaimed prizes
 
 ```{r}
 #| context: server
@@ -92,21 +93,21 @@ output$bond <- renderText({
 
 ```{r}
 #| content: valuebox
-#| title: "I found two old premium bonds from 1959"
+#| title: "There is £108,147,675 available"
 #| color: pink
 #| icon: currency-pound
-p("Are unclaimed prizes attached to these bonds?")
+p("from 2,608,195 unclaimed prizes")
 ```
 
 ```{r}
 #| content: valuebox
-#| title: "Search here for unclaimed prizes"
+#| title: "This dashboard locates unclaimed prizes"
 #| color: blue
 #| icon: unlock-fill
 p("simply enter premium bond numbers top-left")
 ```
 
-## Row {height="86%"}
+## Row {height="86%" .fill}
 
 ### Table
 
@@ -123,11 +124,11 @@ SumDF |> gt() |>
   cols_label(Prize ~ "Prize Value", Number ~ "Number of Prizes", Total_value ~ "Total Value") |> 
   tab_header(title = "Unclaimed prizes from 1956 to 2025") |> 
   opt_stylize(style = 6, color = "pink") |> 
-  opt_table_font(stack = "humanist") |> 
-  tab_footnote(
-    footnote = "There are 2,608,195 unclaimed prizes totalling £108,147,675"
+  opt_table_font(stack = "humanist") #|> 
+  #tab_footnote(
+    #footnote = "There are 2,608,195 unclaimed prizes totalling £108,147,675"
     
-  )
+  #)
   
 ```
 
