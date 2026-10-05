@@ -49,7 +49,7 @@ tags$b(textOutput("bond"))
 tags$br()
 ```
 
-[Learn more](https://www.nsandi.com/products/premium-bonds/) about premium bonds
+[Try this](https://drclongstaff-prem-bond-simulator.share.connect.posit.cloud/) premium bond simulator to see whether investing is for you!
 
 [See my Shiny apps](https://drclongstaff.github.io/shiny-clots/) for reproducible analysis of biochemical assays
 
